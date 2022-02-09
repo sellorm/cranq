@@ -25,6 +25,10 @@ CRAN's incoming package queue.
 This can be especially useful if you're releasing a package and want to 
 check on the status of your submission.
 
+Having said that, most people will be better off using the
+[R-Hub CRAN Incoming Dashboard](https://r-hub.github.io/cransays/articles/dashboard.html)
+instead of this package.
+
 ## Installation
 
 You can install the development version of cranq like this:
