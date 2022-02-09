@@ -33,6 +33,20 @@ You can install the development version of cranq like this:
 remotes::install_github("sellorm/cranq")
 ```
 
+## A quick note on usage
+
+This package scrapes the web pages for the
+[CRAN incoming queue](https://cran.r-project.org/incoming/)
+and as such relies on the fact that this is easily available, public information.
+
+Those pages exist at the discretion of the CRAN team.
+They're a privilege, not a right.
+So just like you wouldn't load up all those pages in your web browser and keep
+mashing the reload button, please don't repeatedly execute these functions in a
+quick-fire fashion.
+
+Basically, don't be an idiot. Thanks!
+
 ## Usage
 
 There are basically two things cranq can do for you. You can view the incoming
