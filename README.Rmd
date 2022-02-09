@@ -1,0 +1,67 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+
+# cranq
+
+(Pronounced either like "cran queue" or "crank", I don't mind.)
+
+
+The goal of cranq is to provide a quick way to check the status of packages in
+CRAN's incoming package queue.
+
+This can be especially useful if you're releasing a package and want to 
+check on the status of your submission.
+
+## Installation
+
+You can install the development version of cranq like this:
+
+``` r
+remotes::install_github("sellorm/cranq")
+```
+
+## Usage
+
+There are basically two things cranq can do for you. You can view the incoming
+queue or you can search for a package within the queue.
+
+To show all packages in the incoming queue:
+
+```{r}
+library(cranq)
+incoming()
+```
+
+To show a specific incoming stage by name:
+
+```{r}
+incoming("newbies")
+```
+
+To find a specific package within all the queues:
+
+```{r}
+check_package("musclesyneRgies")
+```
+
+Edgar Ruiz and Hadley Wickham performed some
+[analysis of what these stages might mean](https://github.com/edgararuiz-zz/cran-stages).
+
+## License
+
+Released under the [MIT License](LICENSE.md).
+
+Copyright (c) 2022 Mark Sellors.
